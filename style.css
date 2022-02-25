@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend Deca', sans-serif;
+    color: white;
+}
+body{
+    background-color: hsl(233, 47%, 7%);
+}
+.Container{
+    border-radius: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /* background-image: url("images/image-header-desktop.jpg"); */
+    
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-color:hsl(244, 38%, 16%)  ;
+    width: 80%;
+    height: 88%;
+    
+}
+.head{
+    
+    width: 40%;
+    font-size: 20px;
+    margin-top: 5%;
+    margin-left: 4%;
+    
+    
+}
+.para{
+    
+    width: 30%;
+    margin-top: 1%;
+    margin-left: 4%;
+    text-align: left;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.upst{
+    
+    width: 40%;
+    margin-top: 3%;
+    margin-left: 4%;
+    text-align: left;
+    font-size: 15px;
+}
+.upst span{
+    font-size: 35px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    padding-left: 14%;
+    text-align: left;
+}
+.downst{
+    
+    width: 40%;
+    margin-top: 1%;
+    margin-left: 4%;
+    text-align: left;
+    font-size: 15px;
+}
+.downst span{
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 900;
+    padding-left: 14%;
+    text-align: left;
+    margin-bottom: 10%;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.purp{
+    color:  hsl(277, 64%, 61%);
+}
+h1{
+    font-weight: bolder;
+}
+ #back{
+    position: absolute;
+    opacity:0.5;
+    width: 100%;
+    left: 0%;
+    overflow: hidden;
+    height: 100%;
+    border-radius: 0px 20px 20px 0px;
+    filter: saturate(6);
+} 
+
+.backimg{
+    border-radius: 20px;
+    width: 40%;
+    left: 50.3%;
+    position: absolute;
+    height: 88%;
+    border-radius: 0px 20px 20px 0px;
+    top: 6%;
+    background-color: rgb(81, 0, 128);
+    z-index: 1;
+    
+}
+@media screen and (max-width:2560px) {
+    .Container{
+        width: 50%;
+    }
+}
+@media screen and (max-width:2135px) {
+    .Container{
+        width: 58%;
+    }
+}
+@media screen and (max-width:1832px) {
+    .Container{
+        width: 70%;
+    }
+}
+@media screen and (max-width:1530px) {
+    .Container{
+        width: 81%;
+        height: 60%;
+    }
+    .backimg{
+        height: 60%;
+        top: 20%;
+    }
+}
+@media screen and (max-width:1319px) {
+    .Container{
+        width: 95%;
+    }
+    .backimg{
+       left: 58%;
+    }
+}
+@media screen and  (max-width:1124px){
+    .head{
+        width: 45%;
+    }
+    .para{
+        width: 37%;
+    }
+    .upst{
+        width: 50%;
+    }
+    .downst{
+        width: 50%;
+    }
+}
+@media screen and  (max-width:950px){
+    .head{
+        font-size: 18px;
+    }
+    .para{
+        font-size: 13px;
+    }
+    .upst span{
+       padding-left: 10%;
+    }
+    .downst span{
+        padding-left: 9%;
+    }
+}
+@media screen and  (max-width:860px){
+    .head{
+        font-size: 16px;
+    }
+    .para{
+        font-size: 13px;
+    }
+    .upst span{
+       padding-left: 10%;
+    }
+    .downst span{
+        padding-left: 9%;
+    }
+}
+@media screen and (max-width:768px) {
+    .Container{
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 130vh;
+        top: 100%;
+    }
+    #back{
+        position: relative;
+        border-radius: 20px 20px 0px 0px;
+    }
+    .backimg{
+        position: relative;
+        margin-top: 10%;
+        left: 7.2%;
+        width: 85%;
+        z-index: 2;
+        border-radius: 20px 20px 0px 0px;
+    }
+    .head{
+        width: 75vw;
+        font-size: 25px;
+        
+    }
+    .para{
+        width: 75vw;
+        font-size: 24px;
+        text-align: center;
+    }
+    .upst{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        left: 36%;
+        top: 70%;
+    }
+    .upst span{
+        padding-top: 10%;
+    }
+    .downst{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        left: 37%;
+        top: 76%;
+    }
+    .downst span{
+        padding-top: 8%;
+    }
+}
+@media screen and (max-width:666px) {
+    .Container{
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 130vh;
+        top: 100%;
+    }
+    #back{
+        position: relative;
+    }
+    .backimg{
+        position: relative;
+        margin-top: 10%;
+        left: 7.2%;
+        width: 85%;
+        z-index: 2;
+    }
+    .head{
+        width: 75vw;
+        font-size: 20px;
+        
+    }
+    .para{
+        width: 70vw;
+        font-size: 18px;
+        text-align: center;
+    }
+    .upst{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        left: 36%;
+        top: 67%;
+    }
+    .upst span{
+        padding-top: 10%;
+    }
+    .downst{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        left: 37%;
+        top: 73%;
+    }
+    .downst span{
+        padding-top: 8%;
+    }
+}
+@media screen and (max-width:544px) {
+    .Container{
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 130vh;
+        top: 80%;
+    }
+    #back{
+        position: relative;
+    }
+    .backimg{
+        position: relative;
+        margin-top: 10%;
+        left: 7.2%;
+        width: 85%;
+        z-index: 2;
+    }
+    .head{
+        width: 75vw;
+        font-size: 18px;
+        
+        
+    }
+    .para{
+        width: 70vw;
+        font-size: 14px;
+        text-align: center;
+    }
+    .upst{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        left: 36%;
+        top: 67%;
+    }
+    .upst span{
+        padding-top: 10%;
+    }
+    .downst{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        left: 37%;
+        top: 73%;
+    }
+    .downst span{
+        padding-top: 8%;
+    }
+}
+@media screen and (max-width:490px) {
+    .Container{
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        top: 62%;
+    }
+    #back{
+        position: relative;
+    }
+    .backimg{
+        position: relative;
+        margin-top: 10%;
+        left: 7.2%;
+        width: 85%;
+        z-index: 2;
+    }
+    .head{
+        width: 75vw;
+        font-size: 10px;
+        
+        
+    }
+    .para{
+        width: 70vw;
+        font-size: 10px;
+        text-align: center;
+    }
+    .upst{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        left: 36%;
+        top: 63%;
+    }
+    .upst span{
+        padding-top: 10%;
+    }
+    .downst{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        left: 37%;
+        top: 70%;
+    }
+    .downst span{
+        padding-top: 10%;
+    }
+}
+@media screen and (max-width:350px) {
+    .Container{
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        top: 50%;
+    }
+    #back{
+        position: relative;
+    }
+    .backimg{
+        position: relative;
+        margin-top: 10%;
+        left: 7.2%;
+        width: 85%;
+        z-index: 2;
+    }
+    .head{
+        width: 75vw;
+        font-size: 10px;
+        
+        
+    }
+    .para{
+        width: 70vw;
+        font-size: 10px;
+        text-align: center;
+    }
+    .upst{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        left: 36%;
+        top: 57%;
+    }
+    .upst span{
+        padding-top: 10%;
+    }
+    .downst{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        left: 37%;
+        top: 62%;
+    }
+    .downst span{
+        padding-top: 18%;
+    }
+}
